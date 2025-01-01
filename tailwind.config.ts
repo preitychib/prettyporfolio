@@ -12,6 +12,14 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      fontFamily: {
+        title: ["DrunkenHour", "cursive"], 
+        subtitle: ["Dynapuff", "sans-serif"], 
+        body: ["PublicSans", "sans-serif"], 
+      },
+      fontSize: {
+        'clamp-large': 'clamp(1.5rem, 8vw, 6rem)',
+      },
     },
   },
   plugins: [],

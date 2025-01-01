@@ -1,6 +1,6 @@
 import { useRouter } from 'next/navigation';
 
-const pages = ['/', '/about','/education']; 
+const pages = ['/', '/about','/project','/education']; 
 
 export function useHandleScroll(currentPage: string) {
   const router = useRouter();
@@ -14,6 +14,7 @@ export function useHandleScroll(currentPage: string) {
       const nextPage = (currentIndex + 1) % pages.length; 
       router.push(pages[nextPage]);
     } else if (e.deltaY < 0) {
+      if (currentIndex === 0) return;
       const prevPage = (currentIndex - 1 + pages.length) % pages.length; 
       router.push(pages[prevPage]);
     }
