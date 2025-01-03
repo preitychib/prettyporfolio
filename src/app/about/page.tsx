@@ -7,9 +7,9 @@ export default function AboutPage() {
   useEffect(() => {
     const updateBackground = () => {
       if (window.innerWidth < 768) {
-        setBackgroundImage("/page3.png"); 
+        setBackgroundImage("/page3.png");
       } else {
-        setBackgroundImage("/page1.png"); 
+        setBackgroundImage("/page1.png");
       }
     };
 
@@ -19,19 +19,27 @@ export default function AboutPage() {
   }, []);
 
   return (
-    <div className="relative w-screen h-screen overflow-hidden flex justify-center items-center p-5">
+    <div className="relative w-screen h-screen overflow-hidden flex justify-center items-center p-8">
+      {/* Background Images */}
+      {/* <img
+        src="side2.png"
+        alt="Overlay Background"
+        className="absolute top-[-10] left-0 w-full h-auto z-10 md:hidden"
+      /> */}
       <img
         src={backgroundImage}
         alt="Overlay Background"
         className="absolute top-0 left-0 w-full h-full z-10"
       />
 
-      <div className="relative z-20 w-full max-w-5xl flex flex-col md:flex-row justify-between items-start gap-5">
-        <div className="flex-1 p-5">
-          <h1 className="font-bold mb-2 font-title text-[clamp(1.5rem,6vw,4rem)]">
+      {/* Content Container */}
+      <div className="relative z-20 w-full max-w-7xl flex flex-col md:flex-row justify-between items-start gap-10">
+        {/* Text Section */}
+        <div className="flex-1 flex flex-col gap-6">
+          <h1 className="font-bold font-title text-[clamp(4rem,8vw,6rem)] text-left leading-tight">
             About Me
           </h1>
-          <p className="text-base md:text-lg text-gray-600 leading-6">
+          <p className="text-lg md:text-xl text-gray-600 leading-8 text-left">
             I am a computer science student with a strong foundation in
             full-stack development. My passion lies in exploring diverse fields
             such as cloud computing, AI/ML, and DevOps, as I find each domain
@@ -43,11 +51,12 @@ export default function AboutPage() {
           </p>
         </div>
 
+        {/* Image Section */}
         <div className="flex-1 flex justify-center items-center">
           <img
             src="/aboutme.png"
             alt="About Me Illustration"
-            className="max-w-full h-auto"
+            className="w-64 sm:w-80 md:w-[500px] lg:w-[600px] h-auto md:order-last order-first"
           />
         </div>
       </div>

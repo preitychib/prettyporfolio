@@ -1,8 +1,6 @@
 "use client";
-import { useHandleScroll } from '../../utils/handleScroll';
-
 export default function EducationPage() {
-  // const handleScroll = useHandleScroll('/education');
+ 
     return (
       <div>
       {/* <div onWheel={handleScroll}> */}

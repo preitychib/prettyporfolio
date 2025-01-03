@@ -21,10 +21,10 @@ const Home = () => {
   return (
     <div className="relative w-screen h-screen overflow-hidden">
       <img
-        src="side2.png"
-        alt="Overlay Background"
-        className="absolute top-[-10] left-0 w-full h-auto z-10 md:hidden"
-      />
+      src="side1.png"
+      alt="Overlay Background"
+      className="absolute top-[-10] left-0 w-full h-auto z-10 md:hidden"
+    />
       <img
         src={backgroundImage}
         alt="Overlay Background"
@@ -32,7 +32,7 @@ const Home = () => {
       />
       <div className="absolute top-[30%] left-1/2 -translate-x-1/2 -translate-y-1/2 z-20 w-auto px-5 md:px-10 py-5">
         <h1 className="font-subtitle text-[clamp(2rem,8vw,6rem)] mt-4 text-center">
-          Hello, I'm
+          Hello, I&apos;m
         </h1>
       </div>
 
@@ -45,17 +45,7 @@ const Home = () => {
               className="block w-full h-full object-contain -rotate-1"
             />
             <h1 className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 m-0 px-5 text-[clamp(3rem,8vw,8rem)] md:text-[clamp(4rem,10vw,8rem)] font-title text-black tracking-widest flex gap-[0.1em] whitespace-nowrap">
-              {Array.from('Preeti').map((char, index) => (
-          <span
-            key={index}
-            className="inline-block origin-center"
-            style={{
-              transform: `rotate(${Math.random() * 6 - 3}deg)`,
-            }}
-          >
-            {char}
-          </span>
-        ))}
+             Preeti
       </h1>
     </div>
   </div>
