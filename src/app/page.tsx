@@ -31,7 +31,7 @@ const Home = () => {
         className="absolute top-0 left-0 w-full h-full z-10"
       />
       <div className="absolute top-[30%] left-1/2 -translate-x-1/2 -translate-y-1/2 z-20 w-auto px-5 md:px-10 py-5">
-        <h1 className="font-subtitle text-[clamp(2rem,8vw,6rem)] mt-4 text-center">
+        <h1 className="font-subtitle text-black text-[clamp(2rem,8vw,6rem)] mt-4 text-center">
           Hello, I&apos;m
         </h1>
       </div>

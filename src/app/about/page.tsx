@@ -33,13 +33,13 @@ export default function AboutPage() {
       />
 
       {/* Content Container */}
-      <div className="relative z-20 w-full max-w-7xl flex flex-col md:flex-row justify-between items-start gap-10">
+      <div className="relative  z-20 w-full max-w-7xl flex flex-col md:flex-row justify-between items-start gap-1 ">
         {/* Text Section */}
         <div className="flex-1 flex flex-col gap-6">
-          <h1 className="font-bold font-title text-[clamp(4rem,8vw,6rem)] text-left leading-tight">
+          <h1 className="font-bold font-title text-black text-[clamp(4rem,8vw,6rem)] text-left leading-tight">
             About Me
           </h1>
-          <p className="text-lg md:text-xl text-gray-600 leading-8 text-left">
+          <p className="text-sm md:text-xl text-gray-600 leading-8 text-left font-body">
             I am a computer science student with a strong foundation in
             full-stack development. My passion lies in exploring diverse fields
             such as cloud computing, AI/ML, and DevOps, as I find each domain
@@ -56,7 +56,7 @@ export default function AboutPage() {
           <img
             src="/aboutme.png"
             alt="About Me Illustration"
-            className="w-64 sm:w-80 md:w-[500px] lg:w-[600px] h-auto md:order-last order-first"
+            className="w-64 sm:w-40 md:w-[300px] lg:w-[600px] h-auto md:order-last order-first"
           />
         </div>
       </div>
